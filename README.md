@@ -5,8 +5,6 @@
 ### Validação e consulta de dados brasileiros com as cores de um tucano
 
 [![PyPI version](https://badge.fury.io/py/tucano.svg)](https://badge.fury.io/py/tucano)
-[![Tests](https://github.com/uesleibros/tucano/actions/workflows/tests.yml/badge.svg)](https://github.com/uesleibros/tucano/actions/workflows/tests.yml)
-[![Coverage Status](https://coveralls.io/repos/github/uesleibros/tucano/badge.svg?branch=main)](https://coveralls.io/github/uesleibros/tucano?branch=main)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 [![Typing: mypy](https://img.shields.io/badge/typing-mypy-blue.svg)](http://mypy-lang.org/)
