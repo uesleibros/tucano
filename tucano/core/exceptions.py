@@ -102,3 +102,13 @@ class InvalidPIX(ValidationError):
 	"""
 	
 	pass
+
+class InvalidPlaca(ValidationError):
+    """Placa de veículo inválida."""
+    
+    pass
+
+class InvalidUF(ValidationError):
+    """Sigla de UF (Estado) inválida."""
+    
+    pass
