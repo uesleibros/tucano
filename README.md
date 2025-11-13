@@ -9,7 +9,7 @@
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 [![Typing: mypy](https://img.shields.io/badge/typing-mypy-blue.svg)](http://mypy-lang.org/)
 
-[Quick Start](#-quick-start) • [Funcionalidades](#-funcionalidades) • [Instalação](#-instalação) • [Como Usar](#-como-usar) • [Contribuir](#-contribuindo)
+[Quick Start](#-quick-start) • [Funcionalidades](#-funcionalidades) • [Instalação](#-instalação) • [Como Usar](#%EF%B8%8F-como-usar) • [Contribuir](#-contribuindo)
 
 </div>
 
