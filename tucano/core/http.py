@@ -97,5 +97,4 @@ class HTTPClient:
             return response.json()
 
 
-# Instância singleton
 http_client: HTTPClient = HTTPClient()
