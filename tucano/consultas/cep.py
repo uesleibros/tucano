@@ -3,7 +3,7 @@
 from typing import Dict, Any
 from ..core.http import http_client
 from ..core.exceptions import InvalidCEP, CEPNotFound, CEPAPIError
-from ..validators.cep import cep as cep_validator
+from ..validadores.cep import cep as cep_validator
 
 
 class CEPConsulta:

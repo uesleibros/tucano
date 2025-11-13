@@ -3,7 +3,7 @@
 from typing import Dict, Any, Optional
 from ..core.http import http_client
 from ..core.exceptions import InvalidCNPJ
-from ..validators.cnpj import cnpj as cnpj_validator
+from ..validadores.cnpj import cnpj as cnpj_validator
 
 
 class CNPJConsulta:

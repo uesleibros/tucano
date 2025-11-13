@@ -69,7 +69,7 @@ pip install -e ".[dev]"
 
 ```python
 # --- Validações rápidas (offline) ---
-from tucano import cpf, placa, pix
+from tucano.validadores import cpf, placa, pix
 
 # Validar CPF
 print(f"CPF válido? {cpf.validate('123.456.789-09')}")
@@ -104,11 +104,11 @@ except Exception as e:
 
 A biblioteca é dividida em dois namespaces principais para clareza:
 
-### 1. `tucano` (Validadores)
+### 1. `tucano.validadores` (Validadores)
 Contém todos os validadores que rodam **localmente**, sem necessidade de internet. São rápidos e ideais para validação de formulários.
 
 ```python
-from tucano import cpf, telefone
+from tucano.validadores import cpf, telefone
 
 # Formatar um telefone
 telefone_formatado = telefone.format("11987654321")
