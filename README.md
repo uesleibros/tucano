@@ -68,31 +68,23 @@ pip install -e ".[dev]"
 ## Quick Start
 
 ```python
-# --- Validações rápidas (offline) ---
 from tucano.validadores import cpf, placa, pix
 
-# Validar CPF
 print(f"CPF válido? {cpf.validate('123.456.789-09')}")
-
-# Validar Placa Mercosul
 print(f"Placa válida? {placa.validate('ABC1D23')}")
 
-# Mascarar chave PIX para exibição
 print(f"PIX mascarado: {pix.mascarar('usuario@example.com')}")
 
 
-# --- Consultas (online) ---
 from tucano.consultas import cep as cep_api
 from tucano.consultas import cnpj as cnpj_api
 
-# Consultar endereço por CEP
 try:
     endereco = cep_api.consultar('01310-100')
     print(f"Endereço: {endereco['logradouro']}, {endereco['localidade']}")
 except Exception as e:
     print(f"Erro na consulta de CEP: {e}")
 
-# Consultar dados de uma empresa por CNPJ
 try:
     empresa = cnpj_api.consultar('00.000.000/0001-91') # Banco do Brasil
     print(f"Empresa: {empresa['razao_social']} - Situação: {empresa['situacao_cadastral']}")
@@ -110,11 +102,8 @@ Contém todos os validadores que rodam **localmente**, sem necessidade de intern
 ```python
 from tucano.validadores import cpf, telefone
 
-# Formatar um telefone
-telefone_formatado = telefone.format("11987654321")
-# (11) 98765-4321
+telefone_formatado = telefone.format("11987654321") # (11) 98765-4321
 
-# Gerar um CPF válido para testes
 cpf_teste = cpf.generate()
 ```
 
@@ -124,13 +113,11 @@ Contém todas as funções que fazem **chamadas a APIs externas**. Elas requerem
 ```python
 from tucano.consultas import feriados, banco
 
-# Verificar se hoje é feriado
 from datetime import date
 hoje = date.today().strftime("%Y-%m-%d")
 if feriados.is_feriado(hoje):
     print("Hoje é feriado nacional! 🎉")
 
-# Consultar nome de um banco
 banco_itau = banco.consultar("341")
 print(banco_itau['name']) # Itaú Unibanco S.A.
 ```
